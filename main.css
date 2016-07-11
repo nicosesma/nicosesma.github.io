@@ -1,0 +1,9 @@
+#nav_bar {
+  font-family: Verdana, sans-serif;
+  font-size: 16;
+  font-color: #35586C;
+  positiob: relative;
+  height: 250px;
+  width: 100px;
+  background-color: #cccccc;
+}
