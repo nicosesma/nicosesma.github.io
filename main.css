@@ -3,6 +3,7 @@ body {
 }
 
 #nav_bar {
+  position: static;
   font-family: Verdana, sans-serif;
   font-size: 16;
   color: #718da5;
