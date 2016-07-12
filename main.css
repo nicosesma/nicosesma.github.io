@@ -2,21 +2,31 @@ body {
   background-image: url('https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg')
 }
 
-#nav_bar {
-  position: fixed;
-  font-family: Verdana, sans-serif;
-  color: #718da5;
-  height: 50px;
-  width: 500px;
-  background-color: #374d5f;
-  border-radius: 5px;
+ul {
   margin: 0;
   padding: 0;
+  position: absolute;
+}
+/*Create a horizontal list*/
+li {
+  display: inline-block;
+  float: left;
+  margin-right: 1px;
 }
 
-.nav_tabs {
-  display: inline-block;
-  font-size: 20;
+li a {
+  display: block;
+  min-width: 140px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #718da5;
+  background-color: #374d5f;
+}
+
+.menu {
+
 }
 
 a {
