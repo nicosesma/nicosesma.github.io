@@ -25,6 +25,10 @@ li a {
   background-color: #374d5f;
 }
 
+li:hover a {
+  background: #19c589;
+}
+
 .menu {
 
 }
