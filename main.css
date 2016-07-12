@@ -1,3 +1,7 @@
+body {
+  background-image: url('https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg')
+}
+
 #nav_bar {
   font-family: Verdana, sans-serif;
   font-size: 16;
@@ -10,5 +14,4 @@
 }
 
 .layout {
-  background: #3f286e;
 }
