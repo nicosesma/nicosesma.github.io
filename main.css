@@ -11,6 +11,8 @@ body {
   height: 250px;
   width: 125px;
   background-color: #374d5f;
+  bottom-right-radius: 5px;
+  top-right-radius: 5px;
 }
 
 .layout {
@@ -21,5 +23,5 @@ body {
 }
 
 #about {
-
+  
 }
