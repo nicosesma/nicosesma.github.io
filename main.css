@@ -1,5 +1,7 @@
 body {
   background-image: url('https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg');
+  background-repeat: repeat-y;
+  background-position: center;
 }
 
 ul {
