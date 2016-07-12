@@ -3,7 +3,7 @@ body {
 }
 
 #nav_bar {
-  vertical-align: top;
+  position: static;
   display: inline;
   font-family: Verdana, sans-serif;
   font-size: 16;
