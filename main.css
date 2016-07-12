@@ -10,6 +10,8 @@ body {
   width: 500px;
   background-color: #374d5f;
   border-radius: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav_tabs {
