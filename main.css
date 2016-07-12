@@ -19,6 +19,11 @@ body {
   text-align: center;
 }
 
+.layout.blocktext {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #about {
 
 }
