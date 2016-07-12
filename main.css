@@ -4,15 +4,17 @@ body {
 
 #nav_bar {
   position: fixed;
-  display: inline-block;
   font-family: Verdana, sans-serif;
-  font-size: 16;
   color: #718da5;
-  text-align: center;
   height: 50px;
   width: 500px;
   background-color: #374d5f;
   border-radius: 5px;
+}
+
+.nav_tabs {
+  display: inline-block;
+  font-size: 20;
 }
 
 a {
