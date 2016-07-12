@@ -1,9 +1,10 @@
 #nav_bar {
   font-family: Verdana, sans-serif;
   font-size: 16;
-  font-color: blue;
+  font-color: #ff9900;
+  text-align: center;
   position: relative;
   height: 250px;
   width: 125px;
-  background-color: #cccccc;
+  background-color: #cc66ff;
 }
