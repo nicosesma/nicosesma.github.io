@@ -17,11 +17,7 @@ body {
   display: inline-block;
   color: #80c2b3;
   text-align: center;
-}
-
-.layout.blocktext {
-  margin-left: auto;
-  margin-right: auto;
+  align-self: center;
 }
 
 #about {
