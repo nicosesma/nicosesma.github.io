@@ -1,3 +1,9 @@
+@media (max-width: 767px) {
+  ul {
+
+  }
+}
+
 body {
   background-image: url('https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg');
   background-repeat: repeat-y;
@@ -7,7 +13,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  position: absolute;
+  
 }
 /*Create a horizontal list*/
 li {
