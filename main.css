@@ -139,7 +139,11 @@ p {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+}
+/*
 .img-size{
   height: 300px;
   width:450px;
-}
+}*/
