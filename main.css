@@ -26,9 +26,8 @@ ul {
 }
 
 
-.inline-list > li a {
+.menu a {
   display: block;
-  height: 50px;
   text-align: center;
   line-height: 50px;
   font-family: Helvetica, Arial, sans-serif;
@@ -37,8 +36,9 @@ ul {
   white-space: nowrap;
 }
 
-.inline-list > li:hover a {
+.menu a:hover {
   background: #19c589;
+  color: darkblue;
 }
 
 .menu > li {
