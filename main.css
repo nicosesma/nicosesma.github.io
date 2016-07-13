@@ -13,10 +13,16 @@ ul {
 }
 
 /*Create a horizontal list */
+.inline-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  list-style-type: none;
+}
 .inline-list > li {
   list-style: none;
-  display: inline-block;
-  margin-right: 1px;
+  margin: 0 5px;
 }
 
 
