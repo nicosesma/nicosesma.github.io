@@ -13,7 +13,6 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  
 }
 /*Create a horizontal list*/
 li {
@@ -49,4 +48,8 @@ div {
 
 #about p {
   font-size: 26px;
+}
+
+p {
+  font-size: 20px;
 }
