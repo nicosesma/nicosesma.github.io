@@ -1,16 +1,14 @@
-/* global styles */
-
-
 ul {
   margin: 0;
   padding: 0;
 }
-
+/*
 .clearfix:after{
   content: "";
   display: table;
   clear: both;
 }
+*/
 
 /*Create a horizontal list */
 .inline-list {
@@ -55,6 +53,11 @@ a {
   color: inherit;
 }
 
+h1{
+  color: #50786e;
+  font-size: 48px;
+}
+
 div {
   color: #80c2b3;
   text-align: center;
@@ -86,7 +89,7 @@ img {
 
 
 
-
+/* global styles */
 
 
 /* extra small only*/
