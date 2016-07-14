@@ -1,14 +1,11 @@
+body {
+  background: linear-gradient(135deg, #b5bdc8 0%,#828c95 23%,#28343b 100%);
+}
+
 ul {
   margin: 10px;
   padding: 0;
 }
-/*
-.clearfix:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
 
 /*Create a horizontal list */
 .inline-list {
@@ -80,11 +77,26 @@ p {
 img {
   max-width: 100%;
 }
-/*
-.img-size{
-  height: 300px;
-  width:450px;
-}*/
+
+#home {
+  position: relative;
+
+}
+
+#home::after {
+  content: "";
+  background: url(https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 
 
 
@@ -131,9 +143,6 @@ img {
 @media (min-width: 1200px) {
   .menu{
     height: auto;
-  }
-  body{
-    background-color: grey;
   }
 }
 
