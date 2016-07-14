@@ -144,6 +144,12 @@ img {
     position: absolute;
     z-index: -1;
   }
+  #home h1{
+    font-size: 38px;
+    top: -100px;
+    display: inline-block;
+    text-shadow: 2px 2px black;
+  }
 }
 
 /* small or bigger */
@@ -168,12 +174,6 @@ img {
     right: 0;
     position: absolute;
     z-index: -1;
-  }
-  #home h1{
-    font-size: 38px;
-    top: -100px;
-    display: inline-block;
-    text-shadow: 2px 2px black;
   }
 }
 
