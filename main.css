@@ -134,13 +134,12 @@ img {
 
     background: url(https://mikkiaaron.files.wordpress.com/2013/04/fantasy-city-clouds-skyscraper-photo-212729.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
   }
   #home h1{
     left: 0;
     font-size: 30px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
   }
 }
 
