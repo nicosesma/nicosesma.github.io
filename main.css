@@ -119,9 +119,6 @@ img {
 
 /* extra small only*/
 @media (max-width: 767px) {
-  body{
-    background-color: grey;
-  }
   .menu{
     width: 100%;
     height: auto;
@@ -130,16 +127,53 @@ img {
     background-color: #374d5f;
     color: #718da5;
   }
+  #home {
+    position: relative;
+  }
+  #home::after {
+    content: "";
+    background: url(https://mikkiaaron.files.wordpress.com/2013/04/fantasy-city-clouds-skyscraper-photo-212729.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 /* small or bigger */
-@media (min-width: 768px) {
+@media (min-width: 992px) and (max-width: 1023) {
   .menu{
     width: 100%;
     height: auto;
   }
-  body{
-    background-color: grey;
+  #home {
+    position: relative;
+  }
+  #home::after {
+    content: "";
+    background: url(https://c2.staticflickr.com/4/3765/13133515604_0d6797e63c_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    opacity: 0.75;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  #home h1{
+    font-size: 38px;
+    top: -100px;
+    display: inline-block;
+    text-shadow: 2px 2px black;
   }
 }
 
@@ -165,9 +199,6 @@ img {
   .menu{
     height: auto;
   }
-  body{
-    background-color: grey;
-  }
 }
 
 /*small only*/
@@ -177,12 +208,5 @@ img {
   }
   body{
     background-color: grey;
-  }
-}
-
-
-@media (max-width: 767px) {
-  ul {
-
   }
 }
