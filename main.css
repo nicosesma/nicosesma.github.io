@@ -136,6 +136,11 @@ img {
     width: 100%;
     height: auto;
   }
+  .inline-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
   .inline-list > li:hover a {
     background-color: #374d5f;
     color: #718da5;
