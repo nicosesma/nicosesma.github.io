@@ -140,7 +140,7 @@ img {
   }
   .menu{
     transition: margin-top 200ms;
-    margin-top: -226px;
+    margin-top: -225px;
     width: 100%;
     height: auto;
   }
