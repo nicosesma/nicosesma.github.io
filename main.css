@@ -5,7 +5,6 @@ body {
 ul {
   margin: 10px;
   padding: 0;
-
 }
 
 /*Create a horizontal list */
@@ -15,6 +14,7 @@ ul {
   flex-wrap: nowrap;
   justify-content: center;
   list-style-type: none;
+  margin: 0;
 }
 .inline-list > li {
   list-style: none;
@@ -25,7 +25,7 @@ ul {
   margin: 10px 0;
 }
 
-.menu a {
+.menu > ul > li > a {
   display: block;
   text-align: center;
   line-height: 50px;
@@ -35,25 +35,25 @@ ul {
   white-space: nowrap;
 }
 
-.menu > li {
+.menu > ul > li {
   margin: 0 5px;
   transition: min-width 400ms;
   min-width: 20vw;
   /*min-width: 20%;*/
 }
 
-.menu > li:first-child {
+.menu > ul > li:first-child {
   margin-left: 0;
 }
-.menu > li:last-child {
+.menu > ul > li:last-child {
   margin-right: 0;
 }
-.menu > li:hover {
+.menu > ul > li:hover {
   min-width: 30vw;
   /*min-width: 30%;*/
 }
 
-.menu > li:hover a {
+.menu > ul > li:hover a {
   background: #19c589;
   color: darkblue;
 }
@@ -129,19 +129,35 @@ img {
 
 /* global styles */
 
+.menu-control {
+  display: none;
+}
 
 /* extra small only*/
 @media (max-width: 767px) {
+  .menu-control {
+    display: block;
+  }
   .menu{
+    transition: margin-top 200ms;
+    margin-top: -226px;
     width: 100%;
     height: auto;
   }
-  .inline-list {
-    display: flex;
+  .menu.menu-open {
+    margin-top: 0;
+  }
+  .menu.menu-open .open-menu-control{
+    visibility: hidden;
+  }
+  .menu > ul > li {
+    margin: 0;
+  }
+  .menu > .inline-list {
     flex-direction: column;
     flex-wrap: nowrap;
   }
-  .inline-list > li:hover a {
+  .menu > .inline-list > li:hover a {
     background-color: #374d5f;
     color: #718da5;
   }
