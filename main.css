@@ -70,16 +70,39 @@ ul {
   left: 210px;
   display: inline-block;
   text-shadow: 2px 2px black;
-  animation: stretch 6s infinite;
+  animation: stretch 3s infinite;
 }
 
-@keyframes stretch {0% {
-  transform: scale(.8);
-}
-100% {
-  transform: scale(1.6);
+@keyframes stretch {
+  0% {
+    transform: scale(.8);
+  }
+  50% {
+    transform: scale(1.6);
+  }
+  100% {
+    transform: scale(.8);
+  }
 }
 
+@keyframes pulse {
+  0% {
+    color: #9783cb;
+  }
+  100% {
+    color: #7f9ac7;
+  }
+}
+@keyframes stretch-small {
+  0% {
+    transform: scale(.6);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(.6);
+  }
 }
 
 a {
@@ -151,25 +174,10 @@ img {
     color: #9783cb;
     text-align: center;
     font-size: 22px;
-    animation: pulse 5s infinite, stretch 10s infinite;
+    animation: pulse 5s infinite, stretch-small 5s infinite;
 
   }
-  @keyframes pulse {
-    0% {
-      color: #9783cb;
-    }
-    100% {
-      color: #7f9ac7;
-    }
-  }
-  @keyframes stretch {
-    0% {
-      transform: scale(.6);
-    }
-    100% {
-      transform: scale(1.2);
-    }
-  }
+
   .menu{
     transition: margin-top 200ms;
     margin-top: -226px;
