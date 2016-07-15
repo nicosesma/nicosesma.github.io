@@ -21,6 +21,9 @@ ul {
   margin: 0 5px;
 }
 
+.menu {
+  margin: 10px 0;
+}
 
 .menu a {
   display: block;
@@ -32,14 +35,27 @@ ul {
   white-space: nowrap;
 }
 
-.menu a:hover {
-  background: #19c589;
-  color: darkblue;
+.menu > li {
+  margin: 0 5px;
+  transition: min-width 400ms;
+  min-width: 20vw;
+  /*min-width: 20%;*/
 }
 
-.menu > li {
-  width: 23%;
-  max-width: 140px;
+.menu > li:first-child {
+  margin-left: 0;
+}
+.menu > li:last-child {
+  margin-right: 0;
+}
+.menu > li:hover {
+  min-width: 30vw;
+  /*min-width: 30%;*/
+}
+
+.menu > li:hover a {
+  background: #19c589;
+  color: darkblue;
 }
 
 .section {
