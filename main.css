@@ -133,14 +133,18 @@ img {
   display: none;
 }
 
+
 /* extra small only*/
 @media (max-width: 767px) {
   .menu-control {
     display: block;
+    color: #9783cb;
+    text-align: center;
+    font-size: 22px;
   }
   .menu{
     transition: margin-top 200ms;
-    margin-top: -225px;
+    margin-top: -226px;
     width: 100%;
     height: auto;
   }
