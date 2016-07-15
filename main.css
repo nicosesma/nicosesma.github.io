@@ -44,6 +44,7 @@ ul {
 
 .section {
   padding: 50vh 0;
+  text-align: center;
 }
 
 #home h1{
@@ -63,10 +64,6 @@ a {
 h1{
   color: #50786e;
   font-size: 48px;
-}
-
-div {
-  text-align: center;
 }
 
 #about p {
