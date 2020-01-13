@@ -1,9 +1,15 @@
-function openNav(){
-  var menu = document.querySelector('.menu');
-  menu.classList.add('menu-open')
-}
+function toggleActiveTab(event) {
+  var tabElements = document.querySelectorAll('.nav-item')
 
-function closeNav(){
-  var menu = document.querySelector('.menu');
-  menu.classList.remove('menu-open')
+  tabElements.forEach(element => {
+    if (element.classList.contains('active')) {
+      element.classList.remove('active')
+    }
+  })
+
+  if (!event.target.classList.contains('navbar-brand')) {
+    event.target.classList.add('active')
+  } else if (event.target.classList.contains('navbar-brand')) {
+    tabElements[0].classList.add('active')
+  }
 }
