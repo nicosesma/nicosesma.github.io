@@ -1,136 +1,138 @@
-<!Doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nico Sesma</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+  <meta name="description" content="Portfolio of Nico Sesma, professional software developer specializing in Node.js, React, and AWS.">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usknVF4SpMwo7ZPSfwlzsIYNLUjIGBO5+9R2Mp+NAvPiIASP7lreCdceIY1q1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./main.css">
-  <script type="text/javascript" src="./main.js"></script>
-
   <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="max-width: 100%;">
-    <a class="navbar-brand" onclick="toggleActiveTab(event)" href="#">Nico Sesma</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="navbar-nav collapse navbar-collapse" id="navbarNavAltMarkup">
-      <a class="nav-item nav-link active" onclick="toggleActiveTab(event)" href="#about">About</a>
-      <a class="nav-item nav-link" onclick="toggleActiveTab(event)" href="#work">Work</a>
-      <a class="nav-item nav-link" onclick="toggleActiveTab(event)" href="#skills">Skills</a>
-      <a class="nav-item nav-link" onclick="toggleActiveTab(event)" href="#contact">Contact</a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Nico Sesma</a>
+      <div class="nav-toggle" id="navToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
-  <div id="home" class="container text-center" style="padding-bottom:2em;">
-    <h1 style="padding-top: 10px;">Nicolas Sesma</h1>
-    <div>
-      <img src="./nico_volcano.jpg" style="transform: rotate(90deg); border-radius: 50%; padding: 3em 0; max-width: 100%;">
+  <!-- Home Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <img src="./nico_volcano.jpg" alt="Nico Sesma" class="hero-image">
+      <h1>Nicolas Sesma</h1>
+      <p class="hero-subtitle">Full Stack Developer - Node.js | React | AWS</p>
     </div>
-  </div>
+  </section>
 
-  <div id="about" class="container text-center" style="padding-bottom:2em;">
-    <h1>About</h1>
-    <p class="lead">
-      I'm Nico, a professional software developer living on an island in the San Francisco Bay Area.
-    </p>
-    <p class="lead">
-      Previously, I was working as the technical cofounder of <a href="https://zodaka.com" target="_blank" class="text-info">Zodaka</a>, a start up company operating in the Financial Industry.
-      Now, I am available for consulting work while I'm also working on personal projects and contributing to the open source community.
-    </p>
-    <p class="lead">
-      Please check out my <a href="https://medium.com/@nicosesma" target="_blank" class="text-info">Medium</a> articles for any interesting updates.
-    </p>
-  </div>
-
-  <div id="work" class="container" style="padding-bottom:2em;">
-    <h1 class="text-center">Work</h1>
-    <div class="text-center">
-      <div class="container">
-        <h5>Current Projects</h5>
-        <div class="lead">
-          <a href="https://github.com/nicosesma" target="_blank">
-            <i class="fa fa-github fa-5x" style="color: black;"></i>
-          </a>
-          <p>My Github page has a list of some of the projects that I'm currently working on.</p>
-          <p>I am also interested in contributing to OSS projects.</p>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <p>I'm Nico, a professional software developer and technology consultant.</p>
+        <p>Previously, I was the technical cofounder of <a href="https://zodaka.com" target="_blank">Zodaka</a>, a startup company in the Financial Industry. Now, I'm available for consulting work while working on personal projects and contributing to the open source community.</p>
+        <p>Please check out my <a href="https://medium.com/@nicosesma" target="_blank">Medium</a> articles for interesting updates.</p>
       </div>
-      <div class="container">
-        <h5>Previous Projects</h5>
-        <div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="section">
+    <div class="container">
+      <h2>Work</h2>
+      <div class="work-grid">
+        <div class="work-card">
+          <h3>Current Projects</h3>
+          <a href="https://github.com/nicosesma" target="_blank" class="github-link">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <p>Check out my GitHub page for a list of projects I'm currently working on.</p>
+          <p>I'm also interested in contributing to open source projects.</p>
+        </div>
+        <div class="work-card">
+          <h3>Previous Projects</h3>
           <a href="https://account.zodaka.com" target="_blank">
-            <img src="zodaka-logo-v-2.png" class="img-responsive">
+            <img src="zodaka-logo-v-2.png" alt="Zodaka logo" class="project-logo">
           </a>
+          <p>Zodaka</p>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div id="skills" class="container text-center" style="padding-bottom:2em;">
-    <h1>Skills</h1>
-    <p class="lead">
-      I have experience working in fast paced environments while collaborating with various Business and Technology team members to create innovative products.
-    </p>
-    <p class="lead">
-      I enjoy bringing my expertise of technology to solve business challenges and build sustainable products and services.
-      I have worked as a CTO and as a software engineer and have collaborated closely with business partners and developers to outline product roadmaps and requirements to then build the desired
-      features and services within the given timelines. I enjoy collaborating closely with colleagues to continue learning and solve interesting challenges along the way.
-      I have also worked with international teams and am able to interact with team members
-      in different timezones and communicate in foreign languages including French and Spanish.
-    </p>
-    <p class="lead">
-      The technologies that I primarily work with include Node.js, Javascript, and client side frameworks such as React and Angular.
-      I have also managed the deployment infrastructure of online systems and have worked with AWS and other cloud based deployment platforms.
-      I also believe in adhering to TDD (Test Driven Development) principles and recognize the importance of adding unit and integration tests to projects that I'm involved in.
-      The evolution of software development requires continuous learning and I strive to stay up to date with the latest technologies as well as industry leading security and design principles.
-    </p>
-    <h6>Skills Summary</h6>
-    <p>
-      Node.js/Javascript, React/Angular, HTML/CSS, PostgreSQL, MogoDB, REST and GraphQL APIs, AWS, Git, Unix,
-      ElasticSearch/Kibana, Translating Business Requirements to Technology Specifications, Collaborating with Various Teams
-    </p>
-    <a href="./nicosesma_cv.pdf" download="NicoSesmaCV" target="_blank" type="button" class="btn btn-outline-dark btn-lg">
-      Download CV
-    </a>
-  </div>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-intro">
+        <p>I have extensive experience working in fast-paced environments, collaborating with business and technology teams to create innovative products. I excel at translating business requirements into technical solutions and building sustainable products and services.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Languages & Frameworks</h4>
+          <p>Node.js, JavaScript, React</p>
+        </div>
+        <div class="skill-category">
+          <h4>Databases</h4>
+          <p>PostgreSQL, MongoDB, ElasticSearch</p>
+        </div>
+        <div class="skill-category">
+          <h4>Cloud & Tools</h4>
+          <p>AWS, Git, Unix, Google Cloud</p>
+        </div>
+        <!-- <div class="skill-category">
+          <h4>Other</h4>
+          <p>TDD, Kibana, International Teams, French & Spanish</p>
+        </div> -->
+      </div>
+      <a href="./nicosesma_cv.pdf" download="NicoSesmaCV" class="btn btn-primary">Download CV</a>
+    </div>
+  </section>
 
-  <div id="contact" class="container text-center" style="padding-bottom:140px;">
-    <h1>Contact</h1>
-    <p class="lead">I currently live in the San Francisco Bay Area and am open to new work opportunities.</p>
-    <p>Email me at: <a href="mailto:nicosesmadev@gmail.com" class="text-info">nicosesmadev@gmail.com</a></p>
-  </div>
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <p class="contact-intro">I'm currently available for consulting work and open to new opportunities.</p>
+      <p class="contact-email">Email me at: <a href="mailto:nicosesmadev@gmail.com">nicosesmadev@gmail.com</a></p>
+    </div>
+  </section>
 
-  <footer class="social-footer fixed-bottom text-center">
-    <ul>
-      <li>
-        <a href="https://twitter.com/nicosesmadev" target="_blank" style="color: white;">
-          <i class="fa fa-twitter fa-2x"></i>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://twitter.com/nicosesmadev" target="_blank" aria-label="Twitter" title="Twitter">
+          <i class="fa-brands fa-twitter"></i>
         </a>
-      </li>
-      <li>
-        <a href="https://github.com/nicosesma" target="_blank" style="color: white;">
-          <i class="fa fa-github fa-2x"></i>
+        <a href="https://github.com/nicosesma" target="_blank" aria-label="GitHub" title="GitHub">
+          <i class="fa-brands fa-github"></i>
         </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/nicolas-sesma-47b17aba/" target="_blank" style="color: white;">
-          <i class="fa fa-linkedin fa-2x"></i>
+        <a href="https://www.linkedin.com/in/nicolas-sesma-47b17aba/" target="_blank" aria-label="LinkedIn" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
         </a>
-      </li>
-      <li>
-        <a href="https://medium.com/@nicosesma" target="_blank" style="color: white;">
-          <i class="fa fa-medium fa-2x"></i>
+        <a href="https://medium.com/@nicosesma" target="_blank" aria-label="Medium" title="Medium">
+          <i class="fa-brands fa-medium"></i>
         </a>
-      </li>
-    </ul>
-    <p>&copy; 2020 Nico Sesma. All rights reserved.</p>
+      </div>
+      <p>&copy; 2026 Nico Sesma. All rights reserved.</p>
+    </div>
   </footer>
+
+  <script src="./main.js"></script>
 </body>
 </html>
